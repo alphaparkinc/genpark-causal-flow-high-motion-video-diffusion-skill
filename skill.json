@@ -1,0 +1,41 @@
+{
+  "name": "genpark-causal-flow-high-motion-video-diffusion-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Causal flow high motion video diffusion synthesizer generating physically coherent 1080p cinematic video trajectories.",
+  "author": "genpark",
+  "category": "video-diffusion",
+  "tags": [
+    "wan2.1",
+    "video-generation",
+    "causal-flow",
+    "high-motion-diffusion",
+    "cinematic-video"
+  ],
+  "inputs": {
+    "video_prompt": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "integer"
+    },
+    "resolution_p": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "diffusion_job_id": {
+      "type": "string"
+    },
+    "temporal_frames_count": {
+      "type": "integer"
+    },
+    "causal_flow_consistency_score": {
+      "type": "number"
+    },
+    "rendered_mp4_video_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
